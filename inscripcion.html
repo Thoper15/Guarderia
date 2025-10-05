@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="style/style-nav.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html" class="card-link">
+                <div class="logo">
+                    <img id="logoBuho" src="images/buhoLogo.png" alt="icono de la guarderia Creciendo Juntos">
+                    <h1>Cobra Kids</h1>
+                </div>
+            </a>
+            <label class="menu">
+                <input type="checkbox" name="menu-toggle" id="toggle">
+            </label>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a class="active" href="servicios.html">Servicios</a></li>
+                <li><a class="active" href="actividades.html">Actividades</a></li>
+                <li><a class="active" href="inscripcion.html">Inscripción</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <head>
+        <h1>Inscribe a tu carga ya!</h1>
+        <p>Rellena el siguiente formulario de registro para que seas mas feliz</p>
+    </head>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Información del niñ@</legend>
+                <label for="">Nombres:</label>
+                <input type="text" >
+                <label for="">Apellidos:</label>
+                <input type="text"><br><br>
+                <label for="">Fecha de Nacimiento:</label>
+                <input type="date">
+                <label for="">Genero:</label>
+                <input type="radio" value="masculino" name="masculino">Masculino
+                <input type="radio" value="femenino" name="femenino">Femenino
+            </fieldset>
+            <fieldset>
+                <legend>Informacion del Padre/Madre/Tutor</legend>
+                <label for="">Nombres:</label>
+                <input type="text" >
+                <label for="">Apellidos:</label>
+                <input type="text"><br><br>
+                <label for="">Relacion con el Niñ@:</label>
+                <input type="text">
+                <label for="">Ocupación</label>
+                <input type="text"><br><br>
+                <label for="">Celular:</label>
+                <input type="number">
+                <label for="">Correo Electrónico:</label>
+                <input type="email">
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de Emergencia:</legend>
+                <label for="">Contacto de Emergencia:</label>
+                <input type="text" placeholder="Nombre del contacto">
+                <label for="">Numero del contacto de Emergencia:</label>
+                <input type="number">
+                <label for="">Condiciones a tomar en cuenta:</label>
+                <input type="text" placeholder="Ej: Alergias, Enfermedades, Tratos especiales">
+            </fieldset>
+            <fieldset>
+                <legend>Plan Inicial (0-2):</legend>
+                <label for="">Horario:</label>
+                <select name="" id="">
+                    <option value="">8:00 am - 12:00 pm</option>
+                    <option value="">14:00 pm - 18:00 pm</option>
+                    <option value="">8:00 am - 18:00 pm</option>
+                </select><br>
+                <label for="">Fechas de Inicio:</label>
+                <select name="" id="">
+                    <option value="">Febrero </option>
+                    <option value="">Abril</option>
+                    <option value="">Junio</option>
+                </select>
+            </fieldset>
+            <button type="button"> Registrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
