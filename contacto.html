@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="style/style-nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="stylesheet" href="mapajava/mapa.css" >
 </head>
 <body>
     <nav class="nav">
@@ -12,7 +16,7 @@
             <a href="index.html" class="card-link">
                 <div class="logo">
                     <img id="logoBuho" src="images/buhoLogo.png" alt="icono de la guarderia Creciendo Juntos">
-                    <h1>Cobra Kai</h1>
+                    <h1>Cobra Kids</h1>
                 </div>
             </a>
             <label class="menu">
@@ -28,27 +32,47 @@
         </div>
     </nav>
     <main>
-        <h1>Contactanos y Ubicanos:</h1>
+        <h1>Contáctanos y Ubicanos:</h1>
         <p>Estamos aqui para ayudarte ¡Ponte en contacto con nosotros!</p>
         <section>
             <h2>Información de Contacto</h2>
             <div>
-                <i>iconogps</i>
-                <h3>Dirección</h3>
-                <p>Calle Felicidad donde dejas tus problemas</p>
+                <img src="icons/gps.svg" alt="">
+                <h3>Dirección:</h3>
+                <p>Entre Av.Ayacucho y c/Jordan (plena esquina)</p>
             </div>
             <div>
-                <i>icono telefono</i>
+                <img src="icons/phone.svg" alt="">
                 <h3>Celular</h3>
-                <p>+591 12345678</p>
+                <p>+591 71412717</p>
             </div>
             <div>
-                <i>icono email</i>
-                <h3>Correo</h3>
-                <p>cobra@kai.com</p>
+                <img src="icons/mail.svg" alt="">
+                <h3>Correo:</h3>
+                <p>cobraKids@gmail.com</p>
             </div>
         </section>
+        <form action="">
+            <fieldset>
+                <legend>Dejanos tu comentario para que sigamos mejorando:</legend>
+                <label for="">Nombre(Opcional)</label><br>
+                <input type="text"><br>
+                <label for="">Comenta:</label><br>
+                <textarea name="comentario" id="comentario"></textarea><br>
+                <button type="button">Enviar</button>
+            </fieldset>
+        </form>
+        <section>
+            <h2>Nos encontramos en:</h2>
+            <div id="mapa"></div> 
+        </section>
     </main>
-    
+
+    <button type="button"><a href="inscripcion.html">Inscribelo Ahora!</a></button>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="mapajava/mapa.js" ></script>
 </body>
 </html>
