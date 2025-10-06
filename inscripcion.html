@@ -29,66 +29,92 @@
             </ul>
         </div>
     </nav>
-
-    <head>
-        <h1>Inscribe a tu carga ya!</h1>
-        <p>Rellena el siguiente formulario de registro para que seas mas feliz</p>
-    </head>
+    <header>
+        <h2>Bienvenidos al proceso de inscripción</h2>
+        <p>Te invitamos a formar parte de nuestra comunidad educativa y a acompañar a tu hijo en sus primeros
+            pasosde desarrollo.</p>
+        <p>Completa el proceso de inscripción y comencemos juntos esta hermosa etapa.</p>
+    </header>
     <main>
-        <form action="">
-            <fieldset>
-                <legend>Información del niñ@</legend>
-                <label for="">Nombres:</label>
-                <input type="text" >
-                <label for="">Apellidos:</label>
-                <input type="text"><br><br>
-                <label for="">Fecha de Nacimiento:</label>
-                <input type="date">
-                <label for="">Genero:</label>
-                <input type="radio" value="masculino" name="masculino">Masculino
-                <input type="radio" value="femenino" name="femenino">Femenino
-            </fieldset>
-            <fieldset>
-                <legend>Informacion del Padre/Madre/Tutor</legend>
-                <label for="">Nombres:</label>
-                <input type="text" >
-                <label for="">Apellidos:</label>
-                <input type="text"><br><br>
-                <label for="">Relacion con el Niñ@:</label>
-                <input type="text">
-                <label for="">Ocupación</label>
-                <input type="text"><br><br>
-                <label for="">Celular:</label>
-                <input type="number">
-                <label for="">Correo Electrónico:</label>
-                <input type="email">
-            </fieldset>
-            <fieldset>
-                <legend>Informacion de Emergencia:</legend>
-                <label for="">Contacto de Emergencia:</label>
-                <input type="text" placeholder="Nombre del contacto">
-                <label for="">Numero del contacto de Emergencia:</label>
-                <input type="number">
-                <label for="">Condiciones a tomar en cuenta:</label>
-                <input type="text" placeholder="Ej: Alergias, Enfermedades, Tratos especiales">
-            </fieldset>
-            <fieldset>
-                <legend>Plan Inicial (0-2):</legend>
-                <label for="">Horario:</label>
-                <select name="" id="">
-                    <option value="">8:00 am - 12:00 pm</option>
-                    <option value="">14:00 pm - 18:00 pm</option>
-                    <option value="">8:00 am - 18:00 pm</option>
-                </select><br>
-                <label for="">Fechas de Inicio:</label>
-                <select name="" id="">
-                    <option value="">Febrero </option>
-                    <option value="">Abril</option>
-                    <option value="">Junio</option>
-                </select>
-            </fieldset>
-            <button type="button"> Registrar</button>
-        </form>
+        <section>
+            <h2>Fechas y horarios de inscripción</h2>
+            <p>Las inscripciones están abiertas durante todo el año, de acuerdo con la disponibilidad de vacantes.
+                Puedes visitarnos o <a href="contacto.html"><b>contactenos</b></a> para conocer los cupos disponibles.</p>
+            <h3>Horarios de atención:</h3>
+            <ul>
+                <li>Lunes a Viernes: 8:00 am - 19:00 pm</li>
+                <li>Sábados: 9:00 am - 13:00 pm</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Requisitos para la inscripción</h2>
+            <ul>
+                <li>Formulario de inscripción completo.</li>
+                <li>Fotocopia del certificado de nacimiento del niño/a.</li>
+                <li>Fotocopia del carnet de vacunación al día.</li>
+                <li>Fotocopia del documento de identidad del padre/madre/tutor.</li>
+                <li>Informe médico reciente (si aplica).</li>
+                <li>Pago de la matrícula y primera mensualidad.</li>
+            </ul>
+            <p>Todos los documentos deben ser entregados en original y copia al momento de la inscripción. Asegúrate de
+                tener todo listo para facilitar el proceso.</p>
+        </section>
+        <section>
+            <h4>Completa los siguientes Datos del Niño/a y del Padre/Madre/Tutor</h4>
+            <form>
+                <fieldset>
+                    <legend>Información del niñ@</legend>
+                    <label>Nombres:</label>
+                    <input type="text">
+                    <label>Apellidos:</label>
+                    <input type="text"><br><br>
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date">
+                    <label>Genero:</label>
+                    <label>Masculino</label>
+                    <input type="radio" value="masculino" name="genero">
+                    <label>Femenino</label>
+                    <input type="radio" value="femenino" name="genero"><br><br>
+                    <label>Observaciones o necesidades especiales:</label>
+                    <input type="text" placeholder="Ej: Alergias, Enfermedades, Tratos especiales">
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion del Padre/Madre/Tutor</legend>
+                    <label>Nombres:</label>
+                    <input type="text">
+                    <label>Apellidos:</label>
+                    <input type="text"><br><br>
+                    <label>Parentesco con el Niño/a:</label>
+                    <input type="text">
+                    <label>Celular:</label>
+                    <input type="number"><br><br>
+                    <label>Dirección:</label>
+                    <input type="text">
+                    <label>Correo Electrónico:</label>
+                    <input type="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Contactode Emergencia:</legend>
+                    <label>Nombre completo:</label>
+                    <input type="text" placeholder="Nombre del contacto">
+                    <label>Celular:</label>
+                    <input type="number">
+                    <label>Relación con el Niño/a:</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset>
+                    <legend>Plan Inicial</legend>
+                    <label>horarios:</label>
+                    <select name="" id="">
+                        <option value="">8:00 am - 12:00 pm</option>
+                        <option value="">14:00 pm - 18:00 pm</option>
+                        <option value="">8:00 am - 18:00 pm</option>
+                        <option value="">Estancia por horas</option>
+                    </select>
+                </fieldset>
+                <button type="button"> Registrar</button>
+            </form>
+        </section>
     </main>
 </body>
 
