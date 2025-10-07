@@ -19,7 +19,7 @@
             <a href="index.html" class="card-link">
                 <div class="logo">
                     <img id="logoBuho" src="images/buhoLogo.png" alt="icono de la guarderia Creciendo Juntos">
-                    <h1>Cobra Kais</h1>
+                    <h1>Creciendo Juntos</h1>
                 </div>
             </a>
             <label class="menu">
@@ -43,11 +43,11 @@
     <main>
         <div id="info_Inscripcion">
             <section id="horario">
-                <h2>Fechas y horarios de inscripción</h2>
+                <h2>Fechas y Horarios de inscripción</h2><br>
                 <p>Las inscripciones están abiertas durante todo el año, de acuerdo con la disponibilidad de vacantes.
                     Puedes visitarnos o <a href="contacto.html"><b>contactenos</b></a> para conocer los cupos
                     disponibles.
-                </p>
+                </p><br>
                 <h3>Horarios de atención:</h3>
                 <ul>
                     <li>Lunes a Viernes: 8:00 am - 19:00 pm</li>
@@ -55,7 +55,7 @@
                 </ul>
             </section>
             <section id="requisitos">
-                <h2>Requisitos para la inscripción</h2>
+                <h2>Requisitos para la inscripción</h2><br>
                 <ul>
                     <li>Formulario de inscripción completo.</li>
                     <li>Fotocopia del certificado de nacimiento del niño/a.</li>
@@ -63,8 +63,9 @@
                     <li>Fotocopia del documento de identidad del padre/madre/tutor.</li>
                     <li>Informe médico reciente (si aplica).</li>
                     <li>Pago de la matrícula y primera mensualidad.</li>
-                </ul>
-                <p>Todos los documentos deben ser entregados en original y copia al momento de la inscripción. Asegúrate
+                </ul><br>
+                <p>Para todos los documentos se debe entregar tanto el original y la copia al momento de la inscripción.
+                    Asegúrate
                     de
                     tener todo listo para facilitar el proceso.</p>
             </section>
@@ -74,61 +75,87 @@
             <form>
                 <fieldset class="formulario">
                     <legend>Información del niñ@</legend>
-                    <label>Nombres:</label>
-                    <input type="text">
-                    <label>Apellidos:</label>
-                    <input type="text"><br><br>
-                    <label>Fecha de Nacimiento:</label>
-                    <input type="date">
-                    <label>Género:
-                        <!--<div class="radio-group">-->
-                            <label>
-                                <input type="radio" value="masculino" name="genero">
-                                Masculino
-                            </label>
-                            <label>
-                                <input type="radio" value="femenino" name="genero">
-                                Femenino
-                            </label>
-                        <!--</div>-->
-                    </label>
-                    
-                    <label>Observaciones o necesidades especiales:</label>
-                    <input type="text" placeholder="Ej: Alergias, Enfermedades, Tratos especiales">
+                    <div>
+                        <label>Nombres:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Apellidos:</label><br>
+                        <input type="text"><br><br>
+                    </div>
+                    <div>
+                        <label>Fecha de Nacimiento:</label><br>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label>Género:</label><br>
+                        <input type="radio" value="masculino" name="genero">
+                        <label> Masculino</label>
+                        <input type="radio" value="femenino" name="genero">
+                        <label> Femenino</label>
+                    </div>
+                    <div id="observaciones">
+                        <label>Observaciones o Necesidades especiales:</label><br>
+                        <input type="text" placeholder="Ej: Alergias, Enfermedades,etc">
+                    </div>
                 </fieldset>
-                <fieldset class="formulario">
+                <fieldset class="formularioPadres">
                     <legend>Informacion del Padre/Madre/Tutor</legend>
-                    <label>Nombres:</label>
-                    <input type="text">
-                    <label>Apellidos:</label>
-                    <input type="text"><br><br>
-                    <label>Parentesco con el Niño/a:</label>
-                    <input type="text">
-                    <label>Celular:</label>
-                    <input type="number"><br><br>
-                    <label>Dirección:</label>
-                    <input type="text">
-                    <label>Correo Electrónico:</label>
-                    <input type="email">
+                    <div>
+                        <label>Nombres:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Apellidos:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Parentesco:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Celular:</label><br>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label>Dirección:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Correo Electrónico:</label><br>
+                        <input type="email">
+                    </div>
                 </fieldset>
-                <fieldset class="formulario">
-                    <legend>Contactode Emergencia:</legend>
-                    <label>Nombre completo:</label>
-                    <input type="text" placeholder="Nombre del contacto">
-                    <label>Celular:</label>
-                    <input type="number"><br><br>
-                    <label>Relación con el Niño/a:</label>
-                    <input type="text">
+                <fieldset class="formularioContacto">
+                    <legend>Contacto de Emergencia:</legend>
+                    <div>
+                        <label>Nombres:</label><br>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label>Apellidos:</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Celular:</label><br>
+                        <input type="number"><br><br>
+                    </div>
+                    <div id="relacion">
+                        <label>Relación con el Niño/a:</label><br>
+                        <input type="text">
+                    </div>
                 </fieldset>
                 <fieldset class="formulario" id="planes">
                     <legend>Plan Inicial</legend>
-                    <label>Horarios:</label>
-                    <select name="" id="">
-                        <option value="">8:00 am - 12:00 pm</option>
-                        <option value="">14:00 pm - 18:00 pm</option>
-                        <option value="">8:00 am - 18:00 pm</option>
-                        <option value="">Estancia por horas</option>
-                    </select>
+                    <div>
+                        <label>Horarios:</label><br>
+                        <select name="planes" id="selectPlanes">
+                            <option value="">8:00 am - 12:00 pm</option>
+                            <option value="">14:00 pm - 18:00 pm</option>
+                            <option value="">8:00 am - 18:00 pm</option>
+                            <option value="">Estancia por horas</option>
+                        </select>
+                    </div>
                 </fieldset>
                 <button type="button"> Registrar</button>
             </form>
