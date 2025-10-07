@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'Patrick Hand';
+    src: url('../fonts/PatrickHand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Patrick Hand' , cursive;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #000000;
+    background-color: #e6f7f0;
 }
