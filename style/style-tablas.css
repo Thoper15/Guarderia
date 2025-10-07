@@ -1,0 +1,167 @@
+.table-cuadro {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fef9f3;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        inset 0 2px 0 rgba(255, 255, 255, 0.8);
+    border: 4px solid #8b6f47;
+}
+
+caption {
+    display: none;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(135deg, #8b6f47 0%, #a0826d 100%);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    color: #fef9f3;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 3px solid #6b4423;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+th:first-child {
+    border-top-left-radius: 20px;
+    background: linear-gradient(135deg, #7ba05b 0%, #9cb380 100%);
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+
+tbody tr:nth-child(odd) {
+    background: #fef9f3;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff8e7;
+}
+
+td {
+    padding: 18px 15px;
+    border: 2px solid #d4a574;
+    color: #4a4a4a;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+td:first-child {
+    background: linear-gradient(135deg, #b4d4a1 0%, #c8e5b8 100%);
+    font-weight: bold;
+    color: #3d5a3d;
+    border-left: 4px solid #7ba05b;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    table {
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    caption {
+        font-size: 1.5em;
+    }
+
+    table {
+        font-size: 0.85em;
+    }
+
+    th,
+    td {
+        padding: 12px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-cuadro {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    caption {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+    .table-cuadro::before,
+    .table-cuadro::after {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .table-cuadro {
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    caption {
+        font-size: 1.1em;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+        font-size: 0.75em;
+    }
+}

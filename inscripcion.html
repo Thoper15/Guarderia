@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/style-nav.css">
     <link rel="stylesheet" href="style/style-body.css">
     <link rel="stylesheet" href="style/style-inscripcion.css">
+    <link rel="stylesheet" href="style/style-footer.css">
 
 </head>
 
@@ -77,22 +78,21 @@
                     <legend>Información del niñ@</legend>
                     <div>
                         <label>Nombres:</label><br>
-                        <input type="text">
+                        <input type="text" required >
                     </div>
                     <div>
                         <label>Apellidos:</label><br>
-                        <input type="text"><br><br>
+                        <input type="text"><br>
                     </div>
                     <div>
                         <label>Fecha de Nacimiento:</label><br>
-                        <input type="date">
+                        <input type="date" required>
                     </div>
                     <div>
                         <label>Género:</label><br>
-                        <input type="radio" value="masculino" name="genero">
-                        <label> Masculino</label>
-                        <input type="radio" value="femenino" name="genero">
-                        <label> Femenino</label>
+                        <input type="radio" value="masculino" name="genero">Masculino
+                        <input type="radio" value="femenino" name="genero">Femenino
+                        
                     </div>
                     <div id="observaciones">
                         <label>Observaciones o Necesidades especiales:</label><br>
@@ -103,27 +103,27 @@
                     <legend>Informacion del Padre/Madre/Tutor</legend>
                     <div>
                         <label>Nombres:</label><br>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div>
                         <label>Apellidos:</label><br>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div>
                         <label>Parentesco:</label><br>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div>
                         <label>Celular:</label><br>
-                        <input type="number">
+                        <input type="number" id="celular" required >
                     </div>
                     <div>
                         <label>Dirección:</label><br>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div>
                         <label>Correo Electrónico:</label><br>
-                        <input type="email">
+                        <input type="email" required>
                     </div>
                 </fieldset>
                 <fieldset class="formularioContacto">
@@ -138,7 +138,7 @@
                     </div>
                     <div>
                         <label>Celular:</label><br>
-                        <input type="number"><br><br>
+                        <input type="number" id="celuEmergencia"><br><br>
                     </div>
                     <div id="relacion">
                         <label>Relación con el Niño/a:</label><br>
@@ -157,10 +157,58 @@
                         </select>
                     </div>
                 </fieldset>
-                <button type="button"> Registrar</button>
+                <button type="button" onclick="validarForm()" id="botonform"> Registrar</button>
             </form>
         </section>
     </main>
+
+    <footer class="footer-principal">
+        <div class="logo-redes-sociles">
+            <div class="logo-footer">
+                <img id="logoBuhoFooter" src="images/CreciendoJuntosLogo1.webp"
+                    alt="logo de la guarderia creciendo juntos">
+                <p>Síguenos en nuestras<br>Redes Sociales</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="#" class="redes-sociales"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="redes-sociales"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="redes-sociales"><img src="icons/x-twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+        <nav class="nav-footer">
+            <h4>Menú de navegación</h4>
+            <ul class="nav-links-footer">
+                <li><a class="active-footer" href="index.html">Inicio</a></li>
+                <li><a class="active-footer" href="servicios.html">Servicios</a></li>
+                <li><a class="active-footer" href="actividades.html">Actividades</a></li>
+                <li><a class="active-footer" href="inscripcion.html">Inscripción</a></li>
+                <li><a class="active-footer" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="informacion-footer">
+            <div class="info">
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p class="contacto"> <img src="icons/gps.svg" alt="ubicación" class="footer-icon"> Dirección:
+                        Entre
+                        Av.Ayacucho y c/Jordan (plena esquina)</p>
+                    <p class="contacto"> <img src="icons/phone.svg" alt="teléfono" class="footer-icon"> Celular:
+                        +591
+                        78852177</p>
+                    <p class="contacto"> <img src="icons/mail.svg" alt="correo" class="footer-icon"> Correo:
+                        Creciendo@juntos.com</p>
+                </div>
+                <br>
+                <div class="footer-horarios">
+                    <h4 class="hora">Horarios de Atención</h4>
+                    <p class="Horarios">Lunes a Viernes: 8:00 am - 19:00 pm</p>
+                    <p class="Horarios">Sábados: 9:00 am - 13:00 pm</p>
+                </div>
+            </div>
+        </div>
+        <p class="copy"> &copy; 2025 Creciendo Juntos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="javascript/script-inscripcion.js"></script>
 </body>
 
 </html>
