@@ -10,11 +10,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Patrick Hand' , cursive;
+
+body {
+    font-family: 'Patrick Hand', cursive;
     letter-spacing: 0.05em;
     line-height: 1.6;
     font-size: 1.2rem;
     color: #000000;
     background-color: #e6f7f0;
+}
+
+.visita {
+    font-size: 1.5rem;
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #c7e3f0;
+    text-align: center;
+    padding: 20px 40px;
+    border: solid 1px #216383;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.vista-cont {
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #fda013;
+}
+
+.vista-p {
+    padding-bottom: 20px;
+}
+
+.vista-cont:hover {
+    background-color: #fda013;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+
 }
