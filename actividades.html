@@ -9,7 +9,10 @@
     <!--Links de los estilos -->
     <link rel="stylesheet" href="style/style-nav.css">
     <link rel="stylesheet" href="style/style-body.css">
-    
+    <link rel="stylesheet" href="style/style-actividades.css">
+    <link rel="stylesheet" href="style/style-tablas.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+
 </head>
 
 <body>
@@ -37,88 +40,106 @@
         <h1>Cada día una nueva aventura de aprendizaje</h1>
     </header>
     <main>
-        <section>
-            <h2>Actividades</h2>
-            <p>En cobra Kids, creemos que el aprendizaje comienza con la curiosidad.</p>
-            <p>Nuestras actividades están diseñadas para estimular la imaginación, fomentar la creatividad y
+        <section class="actividades-section">
+            <h2 class="actividades-title">Actividades</h2>
+            <p class="actividades-intro">En Cobra Kids, creemos que el aprendizaje comienza con la curiosidad.</p>
+            <p class="actividades-intro">Nuestras actividades están diseñadas para estimular la imaginación, fomentar la
+                creatividad y
                 promover el aprendizaje a través del juego. Cada actividad está pensada para que los niños descubran,
                 experimenten y se desarrollen en un entorno lleno de afecto, respeto y alegría.</p>
-            <article>
-                <h3>Estimulación temprana</h3>
-                <p>Desde los primeros meses, ofrecemos experiencias sensoriales que despiertan los sentidos y fortalecen
-                    los vínculos afectivos.</p>
-                <p>A través del contacto, la música y el movimiento, ayudamos a que los más pequeños comiencen a
-                    reconocer su entorno con seguridad y curiosidad.</p>
-                <details name="actividades">
-                    <summary>Actividades de estimulación temprana</summary>
-                    <ul>
-                        <li>Juegos sensoriales con texturas, colores y sonidos.</li>
-                        <li>Masajes y ejercicios de motricidad fina y gruesa.</li>
-                        <li>Canciones y rimas para estimular el lenguaje.</li>
-                    </ul>
-                </details>
-            </article>
-            <article>
-                <h3>Aprender jugando</h3>
-                <p>Diseñamos actividades que estimulan el lenguaje, la memoria, la observación y el pensamiento lógico,
-                    siempre adaptadas a la edad y el ritmo de cada niño.</p>
-                <details name="actividades">
-                    <summary>Actividades de aprendizaje activo</summary>
-                    <ul>
-                        <li>Juegos de clasificación y asociación.</li>
-                        <li>Reconocimiento de colores, formas y objetos</li>
-                        <li>Lectura de cuentos y dramatizaciones</li>
-                    </ul>
-                </details>
-            </article>
-            <article>
-                <h3>Movimiento y psicomotricidad</h3>
-                <p> Fomentamos el desarrollo físico y la coordinación motora con juegos dinámicos, ejercicios de
-                    equilibrio y actividades al aire libre.</p>
-                <details name="actividades">
-                    <summary>Actividades de movimiento y psicomotricidad</summary>
-                    <ul>
-                        <li>Juegos de equilibrio y coordinación.</li>
-                        <li>Actividades al aire libre para explorar y aprender.</li>
-                        <li>Danzas y rondas musicales.</li>
-                    </ul>
-                </details>
-            </article>
-            <article>
-                <h3>Arte y creatividad</h3>
-                <p>Piensan, razonan jugando</p>
-                <details name="actividades">
-                    <summary>Actividades de arte y creatividad</summary>
-                    <ul>
-                        <li>Pintura con dedos y pinceles.</li>
-                        <li>Modelado con plastilina y materiales reciclados.</li>
-                        <li>Collages y manualidades temáticas.</li>
-                    </ul>
-            </article>
-            <article>
-                <h3>Música y expresión corporal</h3>
-                <p>Durante el año organizamos momentos únicos que fortalecen la unión entre las familias y nuestra
-                    comunidad educativa.</p>
-                <details name="actividades">
-                    <summary>Actividades de música.</summary>
-                    <ul>
-                        <li>Cuentos musicales.</li>
-                        <li>Juegos de ritmo y bailes.</li>
-                        <li>Cantar y tocar instrumentos simples.</li>
-                    </ul>
-            </article>
-            <article>
-                <h3>Actividades especiales y eventos</h3>
-                <p>Durante el año organizamos momentos únicos que fortalecen la unión entre las familias y nuestra
-                    comunidad educativa.</p>
-                <details name="actividades">
-                    <summary>Actividades especiales y eventos.</summary>
-                    <ul>
-                        <li>Fiestas de cumpleaños.</li>
-                        <li>Fiestas temáticas y celebraciones especiales.</li>
-                        <li>Talleres para padres e hijos.</li>
-                    </ul>
-            </article>
+
+            <div class="actividades-grid">
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Estimulación temprana</h3>
+                    <p class="actividades-card-text">Desde los primeros meses, ofrecemos experiencias sensoriales que
+                        despiertan los sentidos y fortalecen
+                        los vínculos afectivos.</p>
+                    <p class="actividades-card-text">A través del contacto, la música y el movimiento, ayudamos a que
+                        los más pequeños comiencen a
+                        reconocer su entorno con seguridad y curiosidad.</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades de estimulación temprana</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Juegos sensoriales con texturas, colores y sonidos.</li>
+                            <li class="actividades-list-item">Masajes y ejercicios de motricidad fina y gruesa.</li>
+                            <li class="actividades-list-item">Canciones y rimas para estimular el lenguaje.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Aprender jugando</h3>
+                    <p class="actividades-card-text">Diseñamos actividades que estimulan el lenguaje, la memoria, la
+                        observación y el pensamiento lógico,
+                        siempre adaptadas a la edad y el ritmo de cada niño.</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades de aprendizaje activo</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Juegos de clasificación y asociación.</li>
+                            <li class="actividades-list-item">Reconocimiento de colores, formas y objetos</li>
+                            <li class="actividades-list-item">Lectura de cuentos y dramatizaciones</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Movimiento y psicomotricidad</h3>
+                    <p class="actividades-card-text">Fomentamos el desarrollo físico y la coordinación motora con juegos
+                        dinámicos, ejercicios de
+                        equilibrio y actividades al aire libre.</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades de movimiento y psicomotricidad</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Juegos de equilibrio y coordinación.</li>
+                            <li class="actividades-list-item">Actividades al aire libre para explorar y aprender.</li>
+                            <li class="actividades-list-item">Danzas y rondas musicales.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Arte y creatividad</h3>
+                    <p class="actividades-card-text">Piensan, razonan jugando</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades de arte y creatividad</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Pintura con dedos y pinceles.</li>
+                            <li class="actividades-list-item">Modelado con plastilina y materiales reciclados.</li>
+                            <li class="actividades-list-item">Collages y manualidades temáticas.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Música y expresión corporal</h3>
+                    <p class="actividades-card-text">Durante el año organizamos momentos únicos que fortalecen la unión
+                        entre las familias y nuestra
+                        comunidad educativa.</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades de música.</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Cuentos musicales.</li>
+                            <li class="actividades-list-item">Juegos de ritmo y bailes.</li>
+                            <li class="actividades-list-item">Cantar y tocar instrumentos simples.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="actividades-card">
+                    <h3 class="actividades-card-title">Actividades especiales y eventos</h3>
+                    <p class="actividades-card-text">Durante el año organizamos momentos únicos que fortalecen la unión
+                        entre las familias y nuestra
+                        comunidad educativa.</p>
+                    <details class="actividades-details" name="actividades">
+                        <summary class="actividades-summary">Actividades especiales y eventos.</summary>
+                        <ul class="actividades-list">
+                            <li class="actividades-list-item">Fiestas de cumpleaños.</li>
+                            <li class="actividades-list-item">Fiestas temáticas y celebraciones especiales.</li>
+                            <li class="actividades-list-item">Talleres para padres e hijos.</li>
+                        </ul>
+                    </details>
+                </article>
+            </div>
         </section>
         <section>
             <h2>Galeria de Actividades </h2>
@@ -131,93 +152,145 @@
         <section>
             <h1>Objetivos de desarrollo por edad</h1>
             <p>Resumen de las metas de desarrollo en distintas áreas, adaptadas a cada etapa.</p>
-            <table border="1" cellpadding="8" cellspacing="0"
-                summary="Tabla que muestra objetivos de desarrollo por áreas y por rangos de edad">
-                <caption><strong>Objetivos de desarrollo (6 meses - 5 años)</strong></caption>
-                <thead>
-                    <tr>
-                        <th>Área de desarrollo</th>
-                        <th>6 meses - 1 año</th>
-                        <th>1 - 2 años</th>
-                        <th>2 - 3 años</th>
-                        <th>3 - 4 años</th>
-                        <th>4 - 5 años</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Motricidad gruesa</strong></td>
-                        <td>Gateo, control de la cabeza y primeros intentos de sentarse.</td>
-                        <td>Caminata estable, primeros saltos y giros básicos.</td>
-                        <td>Saltos, correr con más coordinación y subir/bajar escalones con apoyo.</td>
-                        <td>Coordinación en juegos más complejos, saltos y equilibrio mejorados.</td>
-                        <td>Habilidad para seguir instrucciones en juegos físicos y deportes simples.</td>
-                    </tr>
+            <h2>Objetivos de desarrollo (6 meses - 5 años)</h2>
+            <div class="table-cuadro">
+                <div class="table-wrapper">
+                    <table summary="Tabla que muestra objetivos de desarrollo por áreas y por rangos de edad">
+                        <thead>
+                            <tr>
+                                <th>Área de desarrollo</th>
+                                <th>6 meses - 1 año</th>
+                                <th>1 - 2 años</th>
+                                <th>2 - 3 años</th>
+                                <th>3 - 4 años</th>
+                                <th>4 - 5 años</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Motricidad gruesa</strong></td>
+                                <td>Gateo, control de la cabeza y primeros intentos de sentarse.</td>
+                                <td>Caminata estable, primeros saltos y giros básicos.</td>
+                                <td>Saltos, correr con más coordinación y subir/bajar escalones con apoyo.</td>
+                                <td>Coordinación en juegos más complejos, saltos y equilibrio mejorados.</td>
+                                <td>Habilidad para seguir instrucciones en juegos físicos y deportes simples.</td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Motricidad fina</strong></td>
-                        <td>Agarrar objetos, manipulación básica con las manos.</td>
-                        <td>Uso de pinza fina, pasar páginas y manipular piezas grandes.</td>
-                        <td>Dibujo con garabatos, ensartar cuentas y manipular tijeras seguras.</td>
-                        <td>Trazos controlados, recorte básico y construcción con piezas pequeñas.</td>
-                        <td>Destreza para el uso de lápiz, tijeras y tareas de autocuidado finas.</td>
-                    </tr>
+                            <tr>
+                                <td><strong>Motricidad fina</strong></td>
+                                <td>Agarrar objetos, manipulación básica con las manos.</td>
+                                <td>Uso de pinza fina, pasar páginas y manipular piezas grandes.</td>
+                                <td>Dibujo con garabatos, ensartar cuentas y manipular tijeras seguras.</td>
+                                <td>Trazos controlados, recorte básico y construcción con piezas pequeñas.</td>
+                                <td>Destreza para el uso de lápiz, tijeras y tareas de autocuidado finas.</td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Lenguaje y comunicación</strong></td>
-                        <td>Balbuceo, reconocimiento de voces y primeras palabras.</td>
-                        <td>Formación de palabras y frases cortas; aumento de vocabulario.</td>
-                        <td>Frases completas, comprensión de instrucciones sencillas y narración básica.</td>
-                        <td>Vocabulario más amplio, participación en cuentos y expresión de ideas.</td>
-                        <td>Habilidades conversacionales, comprensión de instrucciones de varios pasos y
-                            pre-lectoescritura.</td>
-                    </tr>
+                            <tr>
+                                <td><strong>Lenguaje y comunicación</strong></td>
+                                <td>Balbuceo, reconocimiento de voces y primeras palabras.</td>
+                                <td>Formación de palabras y frases cortas; aumento de vocabulario.</td>
+                                <td>Frases completas, comprensión de instrucciones sencillas y narración básica.</td>
+                                <td>Vocabulario más amplio, participación en cuentos y expresión de ideas.</td>
+                                <td>Habilidades conversacionales, comprensión de instrucciones de varios pasos y
+                                    pre-lectoescritura.</td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Social y emocional</strong></td>
-                        <td>Vínculo afectivo con cuidadores y reconocimiento de rostros.</td>
-                        <td>Inicio de interacción social; compartir de forma guiada.</td>
-                        <td>Juego paralelo y social; inicio de cooperación con iguales.</td>
-                        <td>Expresión de emociones con palabras; resolución simple de conflictos.</td>
-                        <td>Empatía emergente, trabajo en equipo y regulación emocional básica.</td>
-                    </tr>
+                            <tr>
+                                <td><strong>Social y emocional</strong></td>
+                                <td>Vínculo afectivo con cuidadores y reconocimiento de rostros.</td>
+                                <td>Inicio de interacción social; compartir de forma guiada.</td>
+                                <td>Juego paralelo y social; inicio de cooperación con iguales.</td>
+                                <td>Expresión de emociones con palabras; resolución simple de conflictos.</td>
+                                <td>Empatía emergente, trabajo en equipo y regulación emocional básica.</td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Cognitivo</strong></td>
-                        <td>Atención breve, exploración sensorial y reconocimiento de objetos.</td>
-                        <td>Clasificación simple, memoria a corto plazo y causa-efecto básico.</td>
-                        <td>Resolución de problemas sencillos, juego simbólico y clasificación más compleja.</td>
-                        <td>Conceptos básicos de número y forma; curiosidad científica y preguntas.</td>
-                        <td>Comprensión de secuencias, inicio de lógica básica y preparación para la lectoescritura.
-                        </td>
-                    </tr>
+                            <tr>
+                                <td><strong>Cognitivo</strong></td>
+                                <td>Atención breve, exploración sensorial y reconocimiento de objetos.</td>
+                                <td>Clasificación simple, memoria a corto plazo y causa-efecto básico.</td>
+                                <td>Resolución de problemas sencillos, juego simbólico y clasificación más compleja.
+                                </td>
+                                <td>Conceptos básicos de número y forma; curiosidad científica y preguntas.</td>
+                                <td>Comprensión de secuencias, inicio de lógica básica y preparación para la
+                                    lectoescritura.
+                                </td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Autonomía y hábitos</strong></td>
-                        <td>Rutinas de alimentación y sueño con apoyo.</td>
-                        <td>Inicio de práctica de higiene simple y aceptación de rutinas.</td>
-                        <td>Mayor independencia en alimentación y vestimenta con ayuda.</td>
-                        <td>Autocuidado básico (lavarse manos, recoger juguetes) con supervisión.</td>
-                        <td>Higiene e independencia en rutinas, preparación para el entorno escolar.</td>
-                    </tr>
+                            <tr>
+                                <td><strong>Autonomía y hábitos</strong></td>
+                                <td>Rutinas de alimentación y sueño con apoyo.</td>
+                                <td>Inicio de práctica de higiene simple y aceptación de rutinas.</td>
+                                <td>Mayor independencia en alimentación y vestimenta con ayuda.</td>
+                                <td>Autocuidado básico (lavarse manos, recoger juguetes) con supervisión.</td>
+                                <td>Higiene e independencia en rutinas, preparación para el entorno escolar.</td>
+                            </tr>
 
-                    <tr>
-                        <td><strong>Creatividad y expresión</strong></td>
-                        <td>Reacción a música, colores y texturas; exploración sensorial.</td>
-                        <td>Interés por materiales artísticos y primeros intentos creativos.</td>
-                        <td>Participación en actividades plásticas y dramatizaciones simples.</td>
-                        <td>Proyectos creativos más largos y representación mediante juego simbólico.</td>
-                        <td>Expresión artística más elaborada y proyectos colectivos sencillos.</td>
-                    </tr>
-                </tbody>
-            </table>
+                            <tr>
+                                <td><strong>Creatividad y expresión</strong></td>
+                                <td>Reacción a música, colores y texturas; exploración sensorial.</td>
+                                <td>Interés por materiales artísticos y primeros intentos creativos.</td>
+                                <td>Participación en actividades plásticas y dramatizaciones simples.</td>
+                                <td>Proyectos creativos más largos y representación mediante juego simbólico.</td>
+                                <td>Expresión artística más elaborada y proyectos colectivos sencillos.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
-        <article id="visita">
-            <p>Si quieres conocer más sobre nuestras actividades y ver cómo cuidamos a los niños, agenda una
+        <article class="visita">
+            <p class="vista-p">Si quieres conocer más sobre nuestras actividades y ver cómo cuidamos a los niños, agenda
+                una
                 visita. Estaremos encantados de recibirte.</p>
-            <a href="contacto.html">Contáctenos para más información</a>
+            <a href="contacto.html" class="vista-cont">Contáctenos</a>
         </article>
     </main>
+    <footer class="footer-principal">
+        <div class="logo-redes-sociles">
+            <div class="logo-footer">
+                <img id="logoBuhoFooter" src="images/CreciendoJuntosLogo1.webp"
+                    alt="logo de la guarderia creciendo juntos">
+                <p>Síguenos en nuestras<br>Redes Sociales</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="#" class="redes-sociales"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="redes-sociales"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="redes-sociales"><img src="icons/x-twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+        <nav class="nav-footer">
+            <h4>Menú de navegación</h4>
+            <ul class="nav-links-footer">
+                <li><a class="active-footer" href="index.html">Inicio</a></li>
+                <li><a class="active-footer" href="servicios.html">Servicios</a></li>
+                <li><a class="active-footer" href="actividades.html">Actividades</a></li>
+                <li><a class="active-footer" href="inscripcion.html">Inscripción</a></li>
+                <li><a class="active-footer" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="informacion-footer">
+            <div class="info">
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p class="contacto"> <img src="icons/gps.svg" alt="ubicación" class="footer-icon"> Dirección:
+                        Entre
+                        Av.Ayacucho y c/Jordan (plena esquina)</p>
+                    <p class="contacto"> <img src="icons/phone.svg" alt="teléfono" class="footer-icon"> Celular:
+                        +591
+                        78852177</p>
+                    <p class="contacto"> <img src="icons/mail.svg" alt="correo" class="footer-icon"> Correo:
+                        Creciendo@juntos.com</p>
+                </div>
+                <br>
+                <div class="footer-horarios">
+                    <h4 class="hora">Horarios de Atención</h4>
+                    <p class="Horarios">Lunes a Viernes: 8:00 am - 19:00 pm</p>
+                    <p class="Horarios">Sábados: 9:00 am - 13:00 pm</p>
+                </div>
+            </div>
+        </div>
+        <p class="copy"> &copy; 2025 Creciendo Juntos. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 
