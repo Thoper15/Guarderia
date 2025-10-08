@@ -9,6 +9,7 @@
     position: sticky;
     background-color: #9EC9B9;
     top: 0;
+    z-index: 1001;
 }
 
 #toggle {
@@ -91,6 +92,8 @@
         inset: 0;
         width: 100%;
         transition: 0.5s transform;
+        z-index: 1000;
+        
     }
 
     .logo,
@@ -129,6 +132,7 @@
         width: 100%;
         text-align: center;
         margin: 5px 0;
+        
     }
 
     .active {
