@@ -31,7 +31,12 @@
     text-shadow: 2px 2px 4px #0000007c;
 
 }
+.logo-principal{
+    height: 280px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
 
+}
 .subtitulo-principal {
     font: bold;
     font-size: 3rem;
@@ -207,6 +212,7 @@
 
 .icon-comp {
     width: 220px;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
 }
 
 /*preguntas frecuentes */
@@ -257,7 +263,23 @@ summary::after {
 details[open] summary::after {
     transform: rotate(180deg);
 }
-
+.answer p{
+    padding-bottom: 10px;
+}
+.preguntas-boton{
+    text-decoration: none;
+    background-color: #fda013;
+    color: white;
+    padding: 6px 12px;
+    border: solid 1px  #5cbdee;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.preguntas-boton:hover{
+    transform: translateY(-2px);
+    border: solid 1px  #ff9900;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
 .answer {
     padding: 0 20px 20px 20px;
     color: #1f475b;
@@ -296,5 +318,8 @@ details[open] summary::after {
 
     .h2-inicio {
         text-align: center;
+    }
+    .logo-principal{
+        height: 140px;
     }
 }
