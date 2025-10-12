@@ -149,17 +149,11 @@
             <h2 class="h2-acti">Galeria de Actividades </h2>
             <p class="actividades-card-text">Así aprendemos, jugamos y crecemos juntos</p>
             <div class="carrusel">
-                <ul>
-                    <li><img src="images/actividad1jpg.jpg" alt="Búho jugando en el parque"></li>
-                    <li><img src="images/actividad2.jpg" alt="Búhos pintando juntos"></li>
-                    <li><img src="images/actividad3.jpg" alt="Búho leyendo un cuento"></li>
-                    <li><img src="images/actividad4.jpg" alt="Búhos compartiendo una merienda"></li>
-                </ul>
-
-                <button class="prev"
-                    onclick="this.parentElement.querySelector('ul').scrollBy({ left: -window.innerWidth, behavior: 'smooth' })">‹</button>
-                <button class="next"
-                    onclick="this.parentElement.querySelector('ul').scrollBy({ left: window.innerWidth, behavior: 'smooth' })">›</button>
+                <button class="btn" id="prev"><img src="icons/deslizar-izquierda.svg"></button>
+                <div class="carrusel-contenedor">
+                    <img src="images/actividad1.jpg" id="galeria">
+                </div>
+                <button class="btn" id="next"><img src="icons/deslizar-derecha.svg"></button>
             </div>
         </section>
         <section>
@@ -335,7 +329,7 @@
         </div>
         <p class="copy"> &copy; 2025 Creciendo Juntos. Todos los derechos reservados.</p>
     </footer>
-
+    <script type="module"  src="javascript/script-actividades.js"></script>
 </body>
 
 </html>

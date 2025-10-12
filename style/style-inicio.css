@@ -31,12 +31,14 @@
     text-shadow: 2px 2px 4px #0000007c;
 
 }
-.logo-principal{
+
+.logo-principal {
     height: 280px;
     width: auto;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 
 }
+
 .subtitulo-principal {
     font: bold;
     font-size: 3rem;
@@ -171,12 +173,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
+
 .card-compromiso,
 .card-equipo,
-.card-testimonios:hover{
+.card-testimonios:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .card-equipo {
     background-color: #fcf4f4;
 }
@@ -212,7 +216,7 @@
 
 .icon-comp {
     width: 220px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 
 /*preguntas frecuentes */
@@ -250,6 +254,7 @@ summary {
     font-weight: 600;
     transition: background 0.3s ease;
 }
+
 summary::-webkit-details-marker {
     display: none;
 }
@@ -263,23 +268,27 @@ summary::after {
 details[open] summary::after {
     transform: rotate(180deg);
 }
-.answer p{
+
+.answer p {
     padding-bottom: 10px;
 }
-.preguntas-boton{
+
+.preguntas-boton {
     text-decoration: none;
     background-color: #fda013;
     color: white;
     padding: 6px 12px;
-    border: solid 1px  #5cbdee;
+    border: solid 1px #5cbdee;
     border-radius: 25px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.preguntas-boton:hover{
+
+.preguntas-boton:hover {
     transform: translateY(-2px);
-    border: solid 1px  #ff9900;
+    border: solid 1px #ff9900;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
+
 .answer {
     padding: 0 20px 20px 20px;
     color: #1f475b;
@@ -319,7 +328,19 @@ details[open] summary::after {
     .h2-inicio {
         text-align: center;
     }
-    .logo-principal{
+
+    .logo-principal {
         height: 140px;
+    }
+
+    .h2-inicio {
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+
+    .h3-inicio {
+        text-align: center;
+        font-size: 1.5rem;
     }
 }

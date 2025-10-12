@@ -51,7 +51,8 @@ summary {
     color: #f3fafa;
     font-size: 1.1em;
     font-weight: 600;
-    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
 }
 
 summary::-webkit-details-marker {
@@ -143,78 +144,103 @@ details[open] summary::after {
     align-self: center;
 }
 
-/*CARRUSEL*/
+/*carrusel*/
+/* Carrusel */
 .carrusel {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 40px auto;
-    overflow: hidden;
+    max-width: 700px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(100, 80, 60, 0.2);
-}
-
-.carrusel ul {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff9e6;
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+    /* mantiene espacio entre botones */
+    gap: 10px;
+    flex-wrap: wrap;
+    /* permite que se adapte en pantallas pequeñas */
+}
+
+/* Contenedor de la imagen */
+.carrusel-contenedor {
+    flex: 1;
+    /* ocupa el espacio disponible */
+    border: solid 1px #287979;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Imagen */
+#galeria {
     width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    /* Oculta scroll en Firefox */
-}
-
-.carrusel ul::-webkit-scrollbar {
-    display: none;
-    /* Oculta scroll en Chrome/Safari */
-}
-
-.carrusel li {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    position: relative;
-}
-
-.carrusel img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+/* Botones */
+/* Carrusel */
+.carrusel {
+    max-width: 700px;
+    width: 90%;
+    margin: 30px auto;
+    position: relative; /* para posicionar los botones sobre la imagen */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de la imagen */
+.carrusel-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen */
+#galeria {
+    width: 100%;
     display: block;
     border-radius: 20px;
-    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Botones de navegación */
-.carrusel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
+/* Botones flotantes */
+.btn {
+    background-color: rgba(255, 217, 114, 0.8);
+    padding: 10px;
     border: none;
-    font-size: 24px;
-    cursor: pointer;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: #6b4e33;
-    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6b4e16;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
 }
 
-.carrusel button:hover {
-    background-color: #f1e4d1;
+.btn img {
+    width: 20px;
+    height: 20px;
 }
 
-.carrusel .prev {
-    left: 10px;
+.btn:hover {
+    background-color: rgba(255, 217, 114, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.carrusel .next {
-    right: 10px;
-}
 
-/* Adaptación a pantallas pequeñas */
 @media (max-width: 800px) {
     .actividades-card {
         display: flex;
@@ -235,21 +261,41 @@ details[open] summary::after {
         font-size: 1.5rem;
         text-align: center;
         width: 90%;
+        text-wrap: balance;
     }
+
     .h2-acti {
         text-align: center;
         font-size: 1.8rem;
         padding: 5px;
     }
-    .h3-acti{
+
+    .h3-acti {
         text-align: center;
         font-size: 1.5rem;
     }
-    .actividades-card-text{
+
+    .actividades-card-text {
         font-size: 1.4rem;
     }
-    .actividades-text{
+
+    .actividades-text {
         text-align: center;
         font-size: 1.4rem;
     }
+
+   /* .btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .carrusel-contenedor {
+        width: 100%;
+    }*/
+
 }

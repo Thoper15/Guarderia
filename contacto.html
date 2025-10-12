@@ -14,7 +14,7 @@
     <!--Links de los estilos -->
     <link rel="stylesheet" href="style/style-nav.css">
     <link rel="stylesheet" href="style/style-body.css">
-    <!--<link rel="stylesheet" href="style/style-contacto.css">-->
+    <link rel="stylesheet" href="style/style-contacto.css">
     <link rel="stylesheet" href="style/style-footer.css">
 
 </head>
@@ -39,55 +39,73 @@
             </ul>
         </div>
     </nav>
-    <main class="contacto_main">
-        <h1>Contáctanos y Ubicanos:</h1>
-        <p>Estamos aqui para ayudarte ¡Ponte en contacto con nosotros!</p>
-        <section class="container">
-            <section class="informacion">
-                <h2>Información de Contacto:</h2> <br>
-                <div class="iconsalign">
-                    <img src="icons/gps.svg" alt="icono de ubicación gps">
-                    <h3>Dirección:</h3>
-                    <p class="info">Entre Av.Ayacucho y c/Jordan (plena esquina)</p>
+    <main class="contacto-main">
+        <h2 class="h2-contac">Contáctanos y Ubicanos</h2>
+        <p class="p-contac">Estamos aqui para ayudarte ¡Ponte en contacto con nosotros!</p>
+        <section class="informacion-card">
+            <div class="informacion-contacto">
+                <h3 class="h3-contac">Información de Contacto:</h3>
+                <div class="info-contac">
+                    <h4>Contacto:</h4>
+                    <p class="contacto"> <img src="icons/gps.svg" alt="ubicación" class="footer-icon"> Dirección:
+                        Entre Av.Ayacucho y c/Jordan (plena esquina)</p>
+                    <p class="contacto"> <img src="icons/phone.svg" alt="teléfono" class="footer-icon"> Celular:
+                        +591 78852177</p>
+                    <p class="contacto"> <img src="icons/whatsapp.svg" alt="teléfono" class="footer-icon"> Whatsapp:
+                        +591 78852177</p>
+                    <p class="contacto"> <img src="icons/mail.svg" alt="correo" class="footer-icon"> Correo:
+                        Creciendo@juntos.com</p>
                 </div>
-                <div class="iconsalign">
-                    <img src="icons/phone.svg" alt="icono de telefono">
-                    <h3>Celular:</h3>
-                    <p class="info">+591 67484289</p>
+                <div class="info-horarios">
+                    <h4 class="hora">Horarios de Atención:</h4>
+                    <p class="Horarios">Lunes a Viernes: 8:00 am - 19:00 pm</p>
+                    <p class="Horarios">Sábados: 9:00 am - 13:00 pm</p>
                 </div>
-                <div class="iconsalign">
-                    <img src="icons/mail.svg" alt="icono de email">
-                    <h3>Correo:</h3>
-                    <p class="info">Creciendo@Juntos.com</p>
+                <div class="info-redes">
+                    <div class="lincks">
+                        <a href="#"><img src="icons/facebook.svg" alt="facebook de creciendo juntos"
+                                class="info-sociales"><br>Facebook</a>
+                        <a href="#"><img src="icons/instagram.svg" alt="instagram de creciendo juntos"
+                                class="info-sociales"><br>Instagram</a>
+                        <a href="#"><img src="icons/x-twitter.svg" alt="x de creciendo juntos"
+                                class="info-sociales"><br>X</a>
+                        <a href="#"><img src="icons/whatsapp.svg" alt="x de creciendo juntos"
+                                class="info-sociales"><br>Whatsapp</a>
+                    </div>
                 </div>
-
-            </section>
-
-            <div id="divmap">
-                <h2>Nos encontramos en:</h2>
-                <div id="mapa"></div><br>
+            </div>
+            <div class="informacion-mapa">
+                <h3 class="h3-contac">Nos encontramos en:</h3>
+                <div id="mapa"></div>
             </div>
         </section>
-        <button type="button" id="boton_inscripcion"><a href="inscripcion.html">Inscribelo Ahora!</a></button>
-    </main>
+        <section class="info-mesaje">
+            <div class="comentarios">
+                <h3 class="h3-contac">Déjanos tu comentario</h3>
+                <p class="p-f">Tu opinión nos ayuda a mejorar:</p>
 
+                <form class="form-comentario">
+                    <label>Tu nombre:</label>
+                    <input type="text" id="nombre-comentario" name="nombre-comentario" placeholder="Nombre" required>
 
-
-        <form action="">
-            <fieldset>
-                <legend>Dejanos tu comentario para que sigamos mejorando:</legend>
-                <label for="">Nombre(Opcional)</label><br>
-                <input type="text"><br>
-                <label for="">Comenta:</label><br>
-                <textarea name="comentario" id="comentario"></textarea><br>
-                <button type="button">Enviar</button>
-            </fieldset>
-        </form>
-        <section>
-            <h2>Nos encontramos en:</h2>
-            <div id="mapa"></div> 
+                    <label>Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="3" placeholder="Escribe tu comentario..."
+                        required></textarea>
+                    <button type="button" id="button-comentario">Enviar comentario</button>
+                </form>
         </section>
-        <button type="button"><a href="inscripcion.html">Inscribelo Ahora!</a></button>
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <h2 id="sms">...</h2>
+                <p is="ms">Tus comentarios nos ayuda a mejorar</p>
+                <button id="cerrarModal">Cerrar</button>
+            </div>
+        </div>
+        <article class="visita">
+            <p class="vista-p">En la Guardería Creciendo Juntos cuidamos, educamos y acompañamos con amor cada paso de
+                tu pequeño.</p>
+            <a href="inscripcion.html" class="vista-cont">Inscribase ahora!</a>
+        </article>
     </main>
     <footer class="footer-principal">
         <div class="logo-redes-sociles">
@@ -138,6 +156,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="mapajava/mapa.js"></script>
+    <script type="module" src="javascript/script-contacto.js"></script>
 </body>
 
 </html>

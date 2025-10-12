@@ -6,4 +6,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([-17.395714,-66.158094]).addTo(map);
 
-marker.bindPopup("Cobra Kids").openPopup();
+marker.bindPopup("Creciendo Juntos").openPopup();
