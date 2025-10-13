@@ -6,20 +6,18 @@
 .actividades-title {
     text-align: center;
     font-size: 2.8em;
-    color: #3d5a3d;
+    color: #1f475b;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 0 rgba(255, 216, 155, 0.5);
 }
 
-.actividades-intro {
+.actividades-intro, .p-acti {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     color: #5a5a5a;
     margin-bottom: 20px;
     line-height: 1.8;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .actividades-grid {
@@ -38,6 +36,7 @@
         0 10px 25px rgba(0, 0, 0, 0.15),
         inset 0 2px 0 rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;
+    text-align: center;
 
 }
 
@@ -104,6 +103,44 @@
     font-size: 0.95em;
 }
 
+.carrusel-ul {
+    display: grid;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.carrusel-ul li {
+    list-style: none;
+}
+
+.img-carrusel {
+    width: 350px;
+    border-radius: 25px;
+    border: solid 1px #1f475b;
+}
+
+.h2-acti {
+    font-size: 2.2rem;
+    width: fit-content;
+    margin: 0 auto;
+    color: #1f475b;
+}
+
+.h4-acti {
+    font-size: 1.9rem;
+    width: fit-content;
+    margin: 0 auto;
+    color: #287979;
+    border-bottom: solid 1px #efb467;
+}
+.img-acti{
+    width: 150px;
+    height: auto;
+}
+
 @media (max-width: 1200px) {
     .actividades-intro {
         font-size: 1.1em;
@@ -153,5 +190,11 @@
 
     .actividades-card-title {
         font-size: 1.5em;
+    }
+
+    .carrusel-ul {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
     }
 }

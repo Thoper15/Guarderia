@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/style-inscripcion.css">
     <link rel="stylesheet" href="style/style-footer.css">
 
+
 </head>
 
 <body>
@@ -19,8 +20,7 @@
         <div class="container">
             <a href="index.html" class="card-link">
                 <div class="logo">
-                    <img id="logoBuho" src="images/buhoLogo.png" alt="icono de la guarderia Creciendo Juntos">
-                    <h1>Creciendo Juntos</h1>
+                    <img id="logoBuho" src="images/logo-txt.webp" alt="icono de la guarderia Creciendo Juntos">
                 </div>
             </a>
             <label class="menu">
@@ -36,7 +36,7 @@
         </div>
     </nav>
     <header>
-        <h2>Bienvenidos al proceso de inscripción</h2><br>
+        <h2>Bienvenidos al Proceso de Inscripción</h2><br>
         <p>Te invitamos a formar parte de nuestra comunidad educativa y a acompañar a tu hijo en sus primeros
             pasosde desarrollo.</p>
         <p>Completa el proceso de inscripción y comencemos juntos esta hermosa etapa.</p>
@@ -71,14 +71,15 @@
                     tener todo listo para facilitar el proceso.</p>
             </section>
         </div>
-        <section>
-            <h4>Completa los siguientes Datos del Niño/a y del Padre/Madre/Tutor</h4>
+        <section class="formularioInscripcion">
+            <h4 id="titulo-inscripcion">Completa los siguientes Datos del Niño/a y del Padre/Madre/Tutor</h4>
             <form>
-                <fieldset class="formulario">
+                <br>
+                <fieldset class="formulario" id="formularioNiño">
                     <legend>Información del niñ@</legend>
                     <div>
                         <label>Nombres:</label><br>
-                        <input type="text" required >
+                        <input type="text" required>
                     </div>
                     <div>
                         <label>Apellidos:</label><br>
@@ -90,16 +91,17 @@
                     </div>
                     <div>
                         <label>Género:</label><br>
-                        <input type="radio" value="masculino" name="genero">Masculino
-                        <input type="radio" value="femenino" name="genero">Femenino
-                        
+                        <div id="generoRadio">
+                            <input type="radio" value="masculino" name="genero">Masculino
+                            <input type="radio" value="femenino" name="genero">Femenino
+                        </div>
                     </div>
                     <div id="observaciones">
                         <label>Observaciones o Necesidades especiales:</label><br>
                         <input type="text" placeholder="Ej: Alergias, Enfermedades,etc">
                     </div>
-                </fieldset>
-                <fieldset class="formularioPadres">
+                </fieldset><br>
+                <fieldset class="formulario" id="formularioPadres">
                     <legend>Informacion del Padre/Madre/Tutor</legend>
                     <div>
                         <label>Nombres:</label><br>
@@ -115,7 +117,7 @@
                     </div>
                     <div>
                         <label>Celular:</label><br>
-                        <input type="number" id="celular" required >
+                        <input type="tel" id="celular" required>
                     </div>
                     <div>
                         <label>Dirección:</label><br>
@@ -125,12 +127,12 @@
                         <label>Correo Electrónico:</label><br>
                         <input type="email" required>
                     </div>
-                </fieldset>
-                <fieldset class="formularioContacto">
+                </fieldset><br>
+                <fieldset class="formulario" id="formularioContacto">
                     <legend>Contacto de Emergencia:</legend>
                     <div>
                         <label>Nombres:</label><br>
-                        <input type="text" placeholder="Nombre">
+                        <input type="text">
                     </div>
                     <div>
                         <label>Apellidos:</label><br>
@@ -138,26 +140,28 @@
                     </div>
                     <div>
                         <label>Celular:</label><br>
-                        <input type="number" id="celuEmergencia"><br><br>
+                        <input type="tel" id="celuEmergencia"><br><br>
                     </div>
                     <div id="relacion">
                         <label>Relación con el Niño/a:</label><br>
                         <input type="text">
                     </div>
-                </fieldset>
+                </fieldset><br>
                 <fieldset class="formulario" id="planes">
                     <legend>Plan Inicial</legend>
                     <div>
                         <label>Horarios:</label><br>
                         <select name="planes" id="selectPlanes">
-                            <option value="">8:00 am - 12:00 pm</option>
-                            <option value="">14:00 pm - 18:00 pm</option>
-                            <option value="">8:00 am - 18:00 pm</option>
-                            <option value="">Estancia por horas</option>
+                            <option value="mañana">8:00 am - 12:00 pm</option>
+                            <option value="tarde">14:00 pm - 18:00 pm</option>
+                            <option value="diaCompleto">8:00 am - 18:00 pm</option>
+                            <option value="eleccion">Estancia por horas</option>
                         </select>
                     </div>
-                </fieldset>
-                <button type="button" onclick="validarForm()" id="botonform"> Registrar</button>
+                </fieldset><br>
+                <div>
+                    <button type="button" onclick="validarForm()" id="botonform"> Registrar</button>
+                </div>
             </form>
         </section>
     </main>
