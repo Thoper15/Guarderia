@@ -19,7 +19,9 @@ body {
     color: #000000;
     background-color: #e6f7f0;
 }
-
+p{
+    text-wrap: balance;
+}
 .visita {
     font-size: 1.5rem;
     max-width: 900px;

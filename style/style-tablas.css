@@ -1,167 +1,108 @@
 .table-cuadro {
-    max-width: 1400px;
-    margin: 0 auto;
-    background: #fef9f3;
-    border-radius: 30px;
-    padding: 30px;
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.15),
-        inset 0 2px 0 rgba(255, 255, 255, 0.8);
-    border: 4px solid #8b6f47;
-}
-
-caption {
-    display: none;
+  background-color: #fdf8f4;
+  border:solid 3px #7e5136;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(150, 120, 80, 0.15);
+  padding: 20px;
+  overflow-x: auto;
+  margin: 20px auto;
+  max-width: 90%;
 }
 
 .table-wrapper {
-    overflow-x: auto;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 100%;
+ /* border-collapse: collapse;*/
+  font-size: 1.2rem;
+  background-color: #fffaf6;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 thead {
-    background: linear-gradient(135deg, #8b6f47 0%, #a0826d 100%);
+  background-color: #a4cbb4; 
+  color: #4e3b2a;
 }
 
 th {
-    padding: 20px 15px;
-    text-align: left;
-    color: #fef9f3;
-    font-size: 1.1em;
-    font-weight: bold;
-    border: 3px solid #6b4423;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-th:first-child {
-    border-top-left-radius: 20px;
-    background: linear-gradient(135deg, #7ba05b 0%, #9cb380 100%);
-}
-
-tbody tr {
-    transition: all 0.3s ease;
-}
-
-
-tbody tr:nth-child(odd) {
-    background: #fef9f3;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
 }
 
 tbody tr:nth-child(even) {
-    background: #fff8e7;
+  background-color: #f8efe7; 
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 td {
-    padding: 18px 15px;
-    border: 2px solid #d4a574;
-    color: #4a4a4a;
-    line-height: 1.6;
-    font-size: 0.95em;
+  padding: 12px 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #5b4633;
 }
 
 td:first-child {
-    background: linear-gradient(135deg, #b4d4a1 0%, #c8e5b8 100%);
-    font-weight: bold;
-    color: #3d5a3d;
-    border-left: 4px solid #7ba05b;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  background-color: #f1e4d1;
+  color: #4a3725;
 }
 
-tbody tr:last-child td:first-child {
-    border-bottom-left-radius: 20px;
+table thead tr:first-child th:first-child {
+  border-top-left-radius: 15px;
 }
 
-tbody tr:last-child td:last-child {
-    border-bottom-right-radius: 20px;
-}
-
-
-
-/* Responsive */
-@media (max-width: 1200px) {
-    table {
-        font-size: 0.9em;
-    }
-
-    th,
-    td {
-        padding: 15px 10px;
-    }
-}
-
-@media (max-width: 900px) {
-    caption {
-        font-size: 1.5em;
-    }
-
-    table {
-        font-size: 0.85em;
-    }
-
-    th,
-    td {
-        padding: 12px 8px;
-    }
+table thead tr:first-child th:last-child {
+  border-top-right-radius: 15px;
 }
 
 @media (max-width: 768px) {
-    .table-cuadro {
-        padding: 15px;
-        border-radius: 20px;
-    }
+  table {
+    font-size: 1rem;
+  }
 
-    caption {
-        font-size: 1.3em;
-        padding: 10px;
-    }
+  th, td {
+    padding: 10px;
+  }
 
-    table {
-        font-size: 0.8em;
-    }
+  thead {
+    display: none;
+  }
 
-    th,
-    td {
-        padding: 10px 6px;
-    }
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #fffaf6;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(120, 90, 60, 0.1);
+    overflow: hidden;
+  }
 
-    .table-cuadro::before,
-    .table-cuadro::after {
-        font-size: 2em;
-    }
-}
+  tbody td {
+    display: flex;
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1e4d1;
+  }
+  
+  tbody .titulo-tabla {
+    text-align:right;
+  }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #6b4e33;
+  }
 
-    .table-cuadro {
-        padding: 10px;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    caption {
-        font-size: 1.1em;
-    }
-
-    th,
-    td {
-        padding: 8px 5px;
-        font-size: 0.75em;
-    }
+  tbody td:last-child {
+    border-bottom: none;
+  }
 }
