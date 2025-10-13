@@ -1,10 +1,12 @@
 /*navegador entre paginas */
-@view-transition{
+@view-transition {
     navigation: auto;
 }
-::view-transition-group{
+
+::view-transition-group {
     animation-duration: 1s;
 }
+
 .nav {
     position: sticky;
     background-color: #9EC9B9;
@@ -15,6 +17,7 @@
 #toggle {
     display: none;
 }
+
 
 .container {
     max-width: 1400px;
@@ -32,10 +35,12 @@
     color: inherit;
     display: block;
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo img {
     width: auto;
     height: 55px;
@@ -62,6 +67,9 @@
     transition: 0.5s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.473);
 }
+.active-page{
+    border-bottom: solid 2px rgba(255, 153, 0, 0.8);
+}
 
 @media (max-width: 900px) {
     .container {
@@ -85,7 +93,7 @@
         width: 100%;
         transition: 0.5s transform;
         z-index: 1000;
-        
+
     }
 
     .logo,
@@ -124,7 +132,7 @@
         width: 100%;
         text-align: center;
         margin: 5px 0;
-        
+
     }
 
     .active {

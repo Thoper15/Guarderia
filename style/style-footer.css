@@ -77,11 +77,13 @@
     transition: background-color 0.2s, color 0.2s;
 }
 /*contactos*/
+.contacto {
+    font-size: 1.2rem;
+}
 .informacion-footer{
     grid-area: infofooter;
     padding-bottom: 26px;
     align-content: center;
-    
 }
 .contacto .footer-icon{
     width: 20px;
@@ -99,7 +101,7 @@
 .info{
     width: fit-content;
     text-align: left;
-    margin: 0 auto; /* <-- Añade esta línea para centrar horizontalmente */
+    margin: 0 auto; 
 }
 .copy{
     padding-top: 10px ;

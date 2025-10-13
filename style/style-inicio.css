@@ -45,6 +45,7 @@
     margin-bottom: 20px;
     color: #216383;
     text-shadow: 2px 2px 4px #ffffff7c;
+    border-bottom: none;
 
 }
 
@@ -342,5 +343,8 @@ details[open] summary::after {
     .h3-inicio {
         text-align: center;
         font-size: 1.5rem;
+    }
+    .p-inicio{
+        font-size: 1.2rem;
     }
 }

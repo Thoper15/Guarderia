@@ -185,19 +185,17 @@ details[open] summary::after {
     opacity: 1;
 }
 
-/* Botones */
 /* Carrusel */
 .carrusel {
     max-width: 700px;
     width: 90%;
     margin: 30px auto;
-    position: relative; /* para posicionar los botones sobre la imagen */
+    position: relative;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Contenedor de la imagen */
 .carrusel-contenedor {
     width: 100%;
     display: flex;
@@ -205,7 +203,6 @@ details[open] summary::after {
     align-items: center;
 }
 
-/* Imagen */
 #galeria {
     width: 100%;
     display: block;
@@ -213,7 +210,6 @@ details[open] summary::after {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Botones flotantes */
 .btn {
     background-color: rgba(255, 217, 114, 0.8);
     padding: 10px;
@@ -283,19 +279,4 @@ details[open] summary::after {
         text-align: center;
         font-size: 1.4rem;
     }
-
-   /* .btn {
-        width: 45px;
-        height: 45px;
-    }
-
-    .btn img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .carrusel-contenedor {
-        width: 100%;
-    }*/
-
 }
