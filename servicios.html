@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/style-servicios.css">
 
     <link rel="stylesheet" href="style/style-footer.css">
-    
+
 </head>
 
 <body>
@@ -80,29 +80,53 @@
                 aprender y crecer con confianza.</p><br>
             <h4>Contamos con espacios amplios, limpios y seguros que estan adaptados a cada edad.</h4>
             <div class="card-recinto">
-                <button type="button" class="botonimg">&lt;</button><!-- ese simbolo &lt; escribe el(<)-->
+                <button type="button" class="botonimg" id="anterior">&lt;</button><!-- ese simbolo &lt; escribe el(<)-->
                 <img src="images/ambientes/img3.jpg " alt="recintos de la guarderia">
-                <button type="buttonS" class="botonimg">></button>
+                <button type="button" class="botonimg" id="posterior">></button>
             </div>
         </section>
         <section id="alimentacion">
             <h2>Nutrición y Bienestar</h2><br>
-            <P>El bienestar de cada niño es nuestra prioridad.
+            <p>El bienestar de cada niño es nuestra prioridad.
                 Ofrecemos una alimentación balanceada y supervisada, con menús adecuados a cada edad.
                 Promovemos hábitos saludables, la hidratación constante y el respeto por los tiempos de cada pequeño.
-            </P>
+            </p>
+            <div id="imgsaludable">
+                <img src="images/buho_nutricion_saludable.png" alt="">
+            </div>
         </section>
         <section id="horarios">
-            <div >
+            <div>
                 <h2>Horarios y Modalidades</h2><br>
                 <p>Sabemos que cada familia tiene diferentes necesidades. Ofrecemos opciones flexibles para adaptarnos a
                     ti: </p>
             </div>
             <ul id="modalidades">
-                <li>Jornada completa</li>
-                <li>Media jornada</li>
-                <li>Estancia por horas</li>
-                <li>Programa vacacional</li>
+                <details class="servicios-details" name="horarios">
+                    <summary class="horarios-summary">Jornada completa</summary>
+                    <ul class="horarios-list">
+                        <li class="horarios-list-item">De 8:00am - 19:00pm</li>
+                    </ul>
+                </details>
+                <details class="servicios-details" name="horarios">
+                    <summary class="horarios-summary">Media Jornada</summary>
+                    <ul class="horarios-list">
+                        <li class="horarios-list-item">De 8:00am - 13:00pm</li>
+                        <li class="horarios-list-item">De 14:00am - 19:00pm</li>
+                    </ul>
+                </details>
+                <details class="servicios-details" name="horarios">
+                    <summary class="horarios-summary">Estancia por horas</summary>
+                    <ul class="horarios-list">
+                        <li class="horarios-list-item">A elección desde las 8:00am hasta las 19:00pm</li>
+                    </ul>
+                </details>
+                <details class="servicios-details" name="horarios">
+                    <summary class="horarios-summary">Programa Vacacional</summary>
+                    <ul class="horarios-list">
+                        <li class="horarios-list-item">De 8:00am - 19:00pm</li>
+                    </ul>
+                </details>
             </ul>
         </section>
         <article class="visita">
@@ -112,7 +136,7 @@
         </article>
 
     </main>
-     <footer class="footer-principal">
+    <footer class="footer-principal">
         <div class="logo-redes-sociles">
             <div class="logo-footer">
                 <img id="logoBuhoFooter" src="images/CreciendoJuntosLogo1.webp"
