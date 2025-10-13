@@ -129,7 +129,8 @@ legend {
 select {
     border: none;
     justify-content: space-between;
-    max-width: 150px;
+    width: 100%;
+    max-width: 100%;
 
 }
 
@@ -191,6 +192,7 @@ button:hover {
         gap: 15px;
         margin: 20px 0;
         padding: 0 10px;
+        flex-direction: column;
     }
 
     #horario,
