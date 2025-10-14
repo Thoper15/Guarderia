@@ -145,7 +145,6 @@ details[open] summary::after {
 }
 
 /*carrusel*/
-/* Carrusel */
 .carrusel {
     max-width: 700px;
     width: 90%;
@@ -157,16 +156,12 @@ details[open] summary::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* mantiene espacio entre botones */
     gap: 10px;
     flex-wrap: wrap;
-    /* permite que se adapte en pantallas pequeñas */
 }
 
-/* Contenedor de la imagen */
 .carrusel-contenedor {
     flex: 1;
-    /* ocupa el espacio disponible */
     border: solid 1px #287979;
     border-radius: 20px;
     display: flex;
