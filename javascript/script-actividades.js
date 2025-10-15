@@ -5,7 +5,7 @@ let animacion= document.getElementById('galeria')
 function cambiarImagen() {
   animacion.style.opacity = 0
   setTimeout(() => {
-    animacion.src = `images/actividades/actividad${x}.webp`
+    animacion.src =`images/actividades/actividad${x}.webp`
     animacion.style.opacity = 1
   }, 300)
 }
