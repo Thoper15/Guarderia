@@ -129,37 +129,47 @@
                 </details>
             </ul>
         </section>
-        <section id="horarios">
-            <div>
-                <h2>Cotización de Precios</h2><br>
-                <p>Tenemos los precios mas accesibles con la mejor calidad que necesita tu niñ@</p>
-            </div>
-            <ul id="modalidades">
-                <details class="servicios-details" name="horarios">
-                    <summary class="horarios-summary"> POR HORAS</summary>
-                    <ul class="horarios-list">
-                        <li class="horarios-list-item"> 20bs por hora</li>
-                    </ul>
-                </details>
-                <details class="servicios-details" name="horarios">
-                    <summary class="horarios-summary"> MENSUAL</summary>
-                    <ul class="horarios-list">
-                        <li class="horarios-list-item">15bs por hora</li>
-                    </ul>
-                </details>
-                <details class="servicios-details" name="horarios">
-                    <summary class="horarios-summary"> SEMESTRAL</summary>
-                    <ul class="horarios-list">
-                        <li class="horarios-list-item">13bs por hora</li>
-                    </ul>
-                </details>
-                <details class="servicios-details" name="horarios">
-                    <summary class="horarios-summary">Anual</summary>
-                    <ul class="horarios-list">
-                        <li class="horarios-list-item">11bs por hora</li>
-                    </ul>
-                </details>
-            </ul>
+        <section class="cotizacion-guarderia">
+            <h2>Cotización de la Mensualidad</h2>
+            <form id="formCotizacion">
+
+                <label>Edad del niño:</label>
+                <select id="edad">
+                    <option value="">-- Seleccione la edad --</option>
+                    <option value="bebe">6 meses a 1 año</option>
+                    <option value="infante">2 a 4 años</option>
+                    <option value="mayor">5 años</option>
+                </select>
+
+                <label>Seleccione el turno:</label>
+                <select id="turno">
+                    <option value="">-- Seleccione --</option>
+                    <option value="mañana">Mañana (8:00 - 13:00)</option>
+                    <option value="tarde">Tarde (14:00 - 19:00)</option>
+                    <option value="completo">Tiempo completo (8:00 - 19:00)</option>
+                    <option value="por_horas">Por horas (máx. 8 horas)</option>
+                </select>
+
+                <div id="horasContainer" style="display: none;">
+                    <label>Ingrese cantidad de horas por día:</label>
+                    <input type="number" id="horas" min="1" max="8">
+                </div>
+
+                <label>Días de asistencia:</label>
+                <div class="dias">
+                    <label><input type="checkbox" value="Lunes"> Lunes</label>
+                    <label><input type="checkbox" value="Martes"> Martes</label>
+                    <label><input type="checkbox" value="Miércoles"> Miércoles</label>
+                    <label><input type="checkbox" value="Jueves"> Jueves</label>
+                    <label><input type="checkbox" value="Viernes"> Viernes</label>
+                    <label><input type="checkbox" id="sabado" value="Sábado"> Sábado (solo mañana)</label>
+                </div>
+
+                <button type="submit">Calcular cotización</button>
+
+                <p id="errorMsg" class="error"></p>
+                <p id="resultado" class="resultado"></p>
+            </form>
         </section>
         <article class="visita">
             <p class="vista-p">Si quieres conocer nuestras instalaciones y ver qué servicios ofrecemos, agenda una
@@ -171,14 +181,17 @@
     <footer class="footer-principal">
         <div class="logo-redes-sociles">
             <div class="logo-footer">
-                <img id="logoBuhoFooter" src="images/CreciendoJuntosLogo1.webp"
+                <img id="logoBuhoFooter" src="images/creciendojuntoslogo1.webp"
                     alt="logo de la guarderia creciendo juntos">
                 <p>Síguenos en nuestras<br>Redes Sociales</p>
             </div>
             <div class="redes-sociales">
-                <a href="https://www.facebook.com/profile.php?id=100063787961520" class="redes-sociales" target="_blank" rel="noopener noreferrer"><img src="icons/facebook.svg" alt="facebook"></a>
-                <a href="https://www.instagram.com/guarderia_chibolines/" class="redes-sociales" target="_blank" rel="noopener noreferrer"><img src="icons/instagram.svg" alt="instagram"></a>
-                <a href="https://x.com/chibolinesmx" class="redes-sociales" target="_blank" rel="noopener noreferrer"><img src="icons/x-twitter.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com/profile.php?id=100063787961520" class="redes-sociales" target="_blank"
+                    rel="noopener noreferrer"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/guarderia_chibolines/" class="redes-sociales" target="_blank"
+                    rel="noopener noreferrer"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="https://x.com/chibolinesmx" class="redes-sociales" target="_blank"
+                    rel="noopener noreferrer"><img src="icons/x-twitter.svg" alt="twitter"></a>
             </div>
         </div>
         <nav class="nav-footer">
