@@ -223,6 +223,7 @@
 /*preguntas frecuentes */
 .preguntas-frecuentes {
     max-width: 800px;
+    width: 90%;
     padding: 20px 0;
     margin: 0 auto;
 }
@@ -309,6 +310,23 @@ details[open] summary::after {
     }
 }
 
+.preguntaf {
+    height: 190px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pref {
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
@@ -320,9 +338,10 @@ details[open] summary::after {
 }
 
 @media (max-width: 768px) {
-    .cuadro-titulo{
+    .cuadro-titulo {
         max-width: 95%;
     }
+
     .cuadros-main {
         display: grid;
         grid-template-columns: 1fr;
@@ -347,10 +366,18 @@ details[open] summary::after {
         text-align: center;
         font-size: 1.5rem;
     }
-    .p-inicio{
+
+    .p-inicio {
         font-size: 1.2rem;
     }
-    .cuadro-titulo #cta{
+
+    .cuadro-titulo #cta {
         font-size: 1.3rem;
+    }
+    .preguntaf{
+        height:120px;
+    }
+    .pref{
+        height: 90px;
     }
 }
