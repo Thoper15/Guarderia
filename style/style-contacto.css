@@ -158,22 +158,6 @@
 }
 
 /* modal*/
-#abrirModal {
-    background-color: #ffd972;
-    color: #6b4e16;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 12px;
-    font-size: 1em;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-#abrirModal:hover {
-    background-color: #ffe8a3;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -205,15 +189,6 @@
 
 .modal-contenido p {
     color: #6b4e16;
-}
-
-.modal-contenido textarea {
-    width: 100%;
-    border: 2px solid #ffd972;
-    border-radius: 10px;
-    padding: 8px;
-    margin: 10px 0;
-    resize: none;
 }
 
 .modal-contenido button {

@@ -320,6 +320,9 @@ details[open] summary::after {
 }
 
 @media (max-width: 768px) {
+    .cuadro-titulo{
+        max-width: 95%;
+    }
     .cuadros-main {
         display: grid;
         grid-template-columns: 1fr;
@@ -346,5 +349,8 @@ details[open] summary::after {
     }
     .p-inicio{
         font-size: 1.2rem;
+    }
+    .cuadro-titulo #cta{
+        font-size: 1.3rem;
     }
 }
