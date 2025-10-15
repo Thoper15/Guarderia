@@ -38,7 +38,7 @@
     <header>
         <h2>Bienvenidos al Proceso de Inscripción</h2><br>
         <p>Te invitamos a formar parte de nuestra comunidad educativa y a acompañar a tu hijo en sus primeros
-            pasosde desarrollo.</p>
+            pasos de desarrollo.</p>
         <p>Completa el proceso de inscripción y comencemos juntos esta hermosa etapa.</p>
     </header><br>
     <main>
@@ -78,80 +78,81 @@
                 <fieldset class="formulario" id="formularioNiño">
                     <legend>Información del niñ@</legend>
                     <div>
-                        <label>Nombres:</label><br>
-                        <input type="text" required>
+                        <label>Nombres:</label>
+                        <input type="text" required id="nombre-niño">
                     </div>
                     <div>
-                        <label>Apellidos:</label><br>
-                        <input type="text"><br>
+                        <label>Apellidos:</label>
+                        <input type="text" required id="apellido-niño">
                     </div>
                     <div>
-                        <label>Fecha de Nacimiento:</label><br>
-                        <input type="date" required>
+                        <label>Fecha de Nacimiento:</label>
+                        <input type="date" name="nacimiento" required id="nacimiento">
                     </div>
                     <div>
-                        <label>Género:</label><br>
+                        <label>Género:</label>
                         <div id="generoRadio">
                             <input type="radio" value="masculino" name="genero">Masculino
                             <input type="radio" value="femenino" name="genero">Femenino
                         </div>
                     </div>
                     <div id="observaciones">
-                        <label>Observaciones o Necesidades especiales:</label><br>
+                        <label>Observaciones o Necesidades especiales: (Opcional)</label>
                         <input type="text" placeholder="Ej: Alergias, Enfermedades,etc">
                     </div>
                 </fieldset><br>
                 <fieldset class="formulario" id="formularioPadres">
-                    <legend>Informacion del Padre/Madre/Tutor</legend>
+                    <legend>Información del Padre/Madre/Tutor</legend>
                     <div>
-                        <label>Nombres:</label><br>
-                        <input type="text" required>
+                        <label>Nombres:</label>
+                        <input type="text" required id="nombre-tutor">
                     </div>
                     <div>
-                        <label>Apellidos:</label><br>
-                        <input type="text" required>
+                        <label>Apellidos:</label>
+                        <input type="text" required id="apellido-tutor">
                     </div>
                     <div>
-                        <label>Parentesco:</label><br>
-                        <input type="text" required>
+                        <label>Parentesco:</label>
+                        <input type="text" required id="parentesco-tutor">
                     </div>
                     <div>
-                        <label>Celular:</label><br>
+                        <label>Celular:</label>
                         <input type="tel" id="celular" required>
                     </div>
                     <div>
-                        <label>Dirección:</label><br>
-                        <input type="text" required>
+                        <label>Dirección:</label>
+                        <input type="text" required id="direccion-tutor">
                     </div>
                     <div>
-                        <label>Correo Electrónico:</label><br>
-                        <input type="email" required>
+                        <label>Correo Electrónico:</label>
+                        <input type="email" required id="correo-tutor">
                     </div>
                 </fieldset><br>
                 <fieldset class="formulario" id="formularioContacto">
-                    <legend>Contacto de Emergencia:</legend>
+                    <legend>Contacto de Emergencia: (opcional)</legend>
                     <div>
-                        <label>Nombres:</label><br>
+                        <label>Nombres:</label>
                         <input type="text">
                     </div>
                     <div>
-                        <label>Apellidos:</label><br>
+                        <label>Apellidos:</label>
                         <input type="text">
                     </div>
                     <div>
-                        <label>Celular:</label><br>
-                        <input type="tel" id="celuEmergencia"><br><br>
+                        <label>Celular:</label>
+                        <input type="tel">
                     </div>
                     <div id="relacion">
-                        <label>Relación con el Niño/a:</label><br>
+                        <label>Relación con el Niño/a:</label>
                         <input type="text">
                     </div>
                 </fieldset><br>
                 <fieldset class="formulario" id="planes">
-                    <legend>Plan Inicial</legend>
+                    <legend id="plan">Planes</legend>
                     <div>
-                        <label>Horarios:</label><br>
-                        <select name="planes" id="selectPlanes">
+                        <p id="content-plan"></p>
+                        <label>Horarios:</label>
+                        <select name="planes" id="select-planes">
                             <option value="mañana">8:00 am - 12:00 pm</option>
                             <option value="tarde">14:00 pm - 18:00 pm</option>
                             <option value="diaCompleto">8:00 am - 18:00 pm</option>
@@ -159,11 +160,20 @@
                         </select>
                     </div>
                 </fieldset><br>
-                <div>
-                    <button type="button" onclick="validarForm()" id="botonform"> Registrar</button>
-                </div>
+
+                <button type="button" id="botonform"> Registrar</button>
+
             </form>
         </section>
+        
+        <div id="modal-inscripcion" class="modal-inscripcion">
+            <div class="modal-content">
+                <h2 id="sms">...</h2>
+                <p is="ms"></p>
+                <button id="cerrarModal">Cerrar</button>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer-principal">
